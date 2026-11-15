@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://safariwithgeofrey.com/</loc>
+    <loc>https://www.safariwithgeofrey.com/</loc>
   </url>
+
+  <url>
+    <loc>https://www.safariwithgeofrey.com/about.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.safariwithgeofrey.com/packages.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.safariwithgeofrey.com/destinations.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.safariwithgeofrey.com/gallery.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.safariwithgeofrey.com/videos.html</loc>
+  </url>
+
+  <url>
+    <loc>https://www.safariwithgeofrey.com/contact.html</loc>
+  </url>
+
 </urlset>
