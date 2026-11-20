@@ -10,7 +10,62 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
 a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.topbar{background:var(--green);color:white;padding:9px 0;font-size:.9rem}.topbar .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 header{position:sticky;top:0;background:rgba(255,255,255,.97);z-index:5;border-bottom:1px solid #e8e6df}.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}.brand{font-weight:900;letter-spacing:.04em;text-decoration:none;color:var(--green);font-size:1.05rem}.navlinks{display:flex;gap:17px;align-items:center;flex-wrap:wrap}.navlinks a{text-decoration:none;font-weight:650;font-size:.92rem}.navlinks a:hover{color:var(--clay)}.menu{display:none;background:var(--green);color:#fff;border:0;padding:8px 12px;border-radius:8px}
-hero{min-height:590px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(10,32,25,.88),rgba(10,32,25,.38)),url('assets/hero.jpg') center/cover no-repeat;background-color:#294d3d}
+.hero{
+  min-height:590px;
+  display:flex;
+  align-items:center;
+  color:white;
+  position:relative;
+  overflow:hidden;
+  background-color:#294d3d;
+}
+.hero-slides{
+  position:absolute;
+  inset:0;
+  z-index:0;
+}
+.hero-slide{
+  position:absolute;
+  inset:0;
+  opacity:0;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  animation:heroFade 30s infinite;
+}
+  .hero-slide.slide1{
+  background-image:url('Geofrey.jpg');
+  animation-delay:0s;
+}
+.hero-slide.slide2{
+  background-image:url('Lion-2.jpg');
+  animation-delay:5s;
+}
+.hero-slide.slide3{
+  background-image:url('Elephant-2.jpg');
+  animation-delay:10s;
+}
+.hero-slide.slide4{
+  background-image:url('Cheetah-2.jpg');
+  animation-delay:15s;
+}
+.hero-slide.slide5{
+  background-image:url('Giraffe.jpg');
+  animation-delay:20s;
+}
+.hero-slide.slide6{
+  background-image:url('Birds.jpg');
+  animation-delay:25s;
+}
+
+@keyframes heroFade{
+  0%,16.66%{opacity:1;}
+  20%,100%{opacity:0;}
+}
+.hero-content{
+  position:relative;
+  z-index:1;
+}
 .hero-content{padding:80px 0;max-width:760px}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-weight:800;font-size:.9rem;color:#f2c8a8}.hero h1{font-size:clamp(2.8rem,7vw,5.8rem);line-height:.98;margin:12px 0 20px;font-weight:950;letter-spacing:-.045em}.hero h2{font-size:clamp(1.25rem,3vw,2rem);margin:0 0 14px}.hero p{font-size:1.1rem;max-width:640px;color:#f4f4ef}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}.btn{display:inline-block;padding:12px 19px;border-radius:7px;text-decoration:none;font-weight:800;border:2px solid transparent}.btn.primary{background:var(--clay);color:white}.btn.outline{border-color:white;color:white}.btn.dark{background:var(--green);color:white}
 section{padding:70px 0}.section-head{max-width:720px;margin-bottom:28px}.section-head .kicker{color:var(--clay);font-weight:850;text-transform:uppercase;letter-spacing:.12em;font-size:.8rem}.section-head h2{font-size:clamp(2rem,4vw,3.2rem);line-height:1.08;margin:7px 0 12px;color:var(--green)}.section-head p{color:var(--muted);margin:0}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.card{background:white;border-radius:14px;overflow:hidden;box-shadow:0 5px 24px rgba(20,40,30,.07);border:1px solid #eae8e1}.card img{display:block;width:100%;height:220px;object-fit:cover;background:#d9ded5}.card-body{padding:20px}.card h3{margin:0 0 8px;color:var(--green);font-size:1.25rem}.card p{color:var(--muted);margin:0 0 14px}.text-link{font-weight:800;color:var(--clay);text-decoration:none}
@@ -30,7 +85,16 @@ section{padding:70px 0}.section-head{max-width:720px;margin-bottom:28px}.section
 <nav class="navlinks" id="navlinks"><a href="#home">Home</a><a href="packages.html">Safari Packages</a><a href="destinations.html">Destinations</a><a href="gallery.html">Gallery</a><a href="videos.html">Safari Videos</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
 </div></header>
 <main>
-<section class="hero" id="home"><div class="wrap hero-content">
+<section class="hero" id="home">
+  <div class="hero-slides">
+  <div class="hero-slide slide1"></div>
+  <div class="hero-slide slide2"></div>
+  <div class="hero-slide slide3"></div>
+  <div class="hero-slide slide4"></div>
+  <div class="hero-slide slide5"></div>
+  <div class="hero-slide slide6"></div>
+</div>
+  <div class="wrap hero-content">
 <div class="eyebrow">Your Tanzania safari starts here</div><h1>SAFARI WITH GEOFREY</h1><h2>Discover the Wild Heart of Tanzania</h2>
 <p>Explore Tanzania’s remarkable wildlife, open savannahs and unforgettable landscapes with a local guide. Every journey can be tailored to your interests, timing and travel style.</p>
 <div class="actions"><a class="btn primary" href="contact.html">Plan Your Safari</a><a class="btn outline" href="gallery.html">Explore Our Gallery</a></div>
