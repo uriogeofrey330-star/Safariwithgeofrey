@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Discover Tanzania on a 7-day wildlife safari through Tarangire, Ngorongoro Crater and Serengeti National Park with Safari with Geofrey.">
+
+<meta name="keywords" content="7 day Tanzania safari, Serengeti safari, Ngorongoro safari, Tarangire safari, Tanzania wildlife tours">
+
+<title>7 Days Tanzania Wildlife Safari | Safari with Geofrey</title>
+
+<link rel="canonical" href="https://www.safariwithgeofrey.com/7-days-tanzania-wildlife-safari.html">
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f7f5ef;
+  color: #263b32;
+  line-height: 1.8;
+}
+
+header {
+  background: #142f27;
+  color: white;
+  padding: 19px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+header h2 {
+  font-size: 21px;
+  letter-spacing: 1.5px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: #e6a36b;
+}
+
+.hero {
+  min-height: 570px;
+  background:
+    linear-gradient(rgba(12,29,23,.55), rgba(12,29,23,.72)),
+    url('Tanzania-Wildlife-Safari.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 90px 20px;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-label {
+  color: #f0b77f;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 65px);
+  line-height: 1.15;
+  margin-bottom: 22px;
+}
+
+.hero p {
+  max-width: 740px;
+  margin: auto;
+  font-size: 18px;
+  color: #f4f2eb;
+}
+
+.hero-button {
+  display: inline-block;
+  background: #ad673e;
+  color: white;
+  text-decoration: none;
+  padding: 14px 27px;
+  border-radius: 4px;
+  margin-top: 30px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.hero-button:hover {
+  background: #874b2c;
+}
+
+.section {
+  padding: 75px 7%;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 42px;
+}
+
+.section-heading span {
+  color: #ad673e;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  font-size: clamp(28px, 4vw, 39px);
+  color: #183b30;
+  margin: 10px 0 15px;
+  line-height: 1.3;
+}
+
+.section-heading p {
+  color: #65736c;
+}
+
+.intro-content {
+  max-width: 950px;
+  margin: auto;
+  text-align: center;
+  font-size: 17px;
+  color: #53635a;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 18px;
+  margin-top: 40px;
+}
+
+.fact {
+  background: white;
+  text-align: center;
+  padding: 25px 15px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.fact strong {
+  display: block;
+  color: #ad673e;
+  font-size: 21px;
+  margin-bottom: 5px;
+}
+
+.fact span {
+  color: #68766e;
+  font-size: 14px;
+}
+
+.destinations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 23px;
+}
+
+.destination {
+  background: white;
+  padding: 28px;
+  border-radius: 8px;
+  border-top: 4px solid #ad673e;
+  box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.destination h3 {
+  color: #183b30;
+  margin-bottom: 12px;
+  font-size: 21px;
+}
+
+.destination p {
+  color: #65736c;
+  font-size: 15px;
+}
+
+.itinerary {
+  max-width: 950px;
+  margin: auto;
+}
+
+.day {
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  gap: 22px;
+  background: white;
+  margin-bottom: 20px;
+  padding: 27px;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0,0,0,.05);
+}
+
+.day-number {
+  background: #183b30;
+  color: white;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.day h3 {
+  color: #183b30;
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+.day p {
+  color: #65736c;
+  font-size: 15px;
+}
+
+.highlights {
+  background: #eae5d9;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 22px;
+}
+
+.highlight {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.highlight h3 {
+  color: #183b30;
+  margin-bottom: 9px;
+}
+
+.highlight p {
+  color: #65736c;
+  font-size: 15px;
+}
+
+.package-info {
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.info-card {
+  background: white;
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.info-card h3 {
+  color: #183b30;
+  margin-bottom: 14px;
+}
+
+.info-card ul {
+  padding-left: 20px;
+  color: #65736c;
+}
+
+.price-section {
+  background: #183b30;
+  color: white;
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.price-section h2 {
+  font-size: 34px;
+  margin-bottom: 12px;
+}
+
+.price-section p {
+  max-width: 720px;
+  margin: auto;
+  color: #e4e9e4;
+}
+
+.price-label {
+  color: #f0b77f;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.booking {
+  text-align: center;
+  padding: 75px 20px;
+  background: #f7f5ef;
+}
+
+.booking h2 {
+  color: #183b30;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.booking p {
+  max-width: 650px;
+  margin: auto;
+  color: #65736c;
+}
+
+.booking-button {
+  display: inline-block;
+  background: #ad673e;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 25px;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.booking-button:hover {
+  background: #874b2c;
+}
+
+footer {
+  background: #102a22;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+  font-size: 14px;
+}
+
+footer p {
+  margin: 5px 0;
+  color: #d6ded8;
+}
+
+footer a {
+  color: #f0b77f;
+  text-decoration: none;
+}
+
+@media(max-width:650px) {
+  header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .hero {
+    min-height: 470px;
+  }
+
+  .day {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    padding: 20px;
+  }
+
+  .day-number {
+    min-height: 48px;
+    justify-content: flex-start;
+  }
+
+  .section {
+    padding: 55px 6%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h2>SAFARI WITH GEOFREY</h2>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="packages.html">Packages</a>
+    <a href="destinations.html">Destinations</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="videos.html">Videos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-label">Explore Tanzania With Geofrey</div>
+
+    <h1>7 Days Tanzania Wildlife Safari</h1>
+
+    <p>
+      Journey through the breathtaking landscapes of Tarangire,
+      Ngorongoro and Serengeti. Experience remarkable wildlife,
+      spectacular scenery and the unforgettable spirit of Africa.
+    </p>
+
+    <a class="hero-button" href="#itinerary">Discover Your Journey</a>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <span>The African Wilderness</span>
+    <h2>Discover the Best of Tanzania in Seven Days</h2>
+    <p>A journey designed around wildlife, nature and unforgettable safari moments.</p>
+  </div>
+
+  <div class="intro-content">
+    <p>
+      Experience an extraordinary seven-day Tanzania wildlife safari
+      exploring three of the country's most celebrated natural
+      destinations. From the magnificent elephant herds and ancient
+      baobab trees of Tarangire to the breathtaking Ngorongoro Crater
+      and the endless wildlife-rich plains of the Serengeti, every
+      destination offers something special.
+    </p>
+
+    <br>
+
+    <p>
+      With Safari with Geofrey, your journey is planned around your
+      interests, travel dates and preferred safari experience.
+      Enjoy the freedom of exploring Tanzania with a knowledgeable
+      local guide and discovering the beauty of the wilderness.
+    </p>
+  </div>
+
+  <div class="facts">
+    <div class="fact">
+      <strong>7 Days</strong>
+      <span>Safari Duration</span>
+    </div>
+
+    <div class="fact">
+      <strong>6 Nights</strong>
+      <span>Accommodation Plan</span>
+    </div>
+
+    <div class="fact">
+      <strong>3 Parks</strong>
+      <span>Iconic Destinations</span>
+    </div>
+
+    <div class="fact">
+      <strong>Private</strong>
+      <span>Custom Safari Experience</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <span>Three Remarkable Destinations</span>
+    <h2>Where Your Safari Takes You</h2>
+    <p>Discover three extraordinary destinations in Tanzania's famous northern safari circuit.</p>
+  </div>
+
+  <div class="destinations">
+
+    <div class="destination">
+      <h3>01. Tarangire National Park</h3>
+      <p>
+        Famous for its impressive elephant herds, ancient baobab trees
+        and beautiful landscapes. Tarangire offers excellent
+        opportunities to observe wildlife around its seasonal rivers
+        and open savannah.
+      </p>
+    </div>
+
+    <div class="destination">
+      <h3>02. Ngorongoro Crater</h3>
+      <p>
+        Explore one of Africa's most extraordinary natural landscapes.
+        The crater floor supports a remarkable concentration of
+        wildlife, including elephants, buffaloes, zebras, lions and
+        the endangered black rhino.
+      </p>
+    </div>
+
+    <div class="destination">
+      <h3>03. Serengeti National Park</h3>
+      <p>
+        Discover the legendary Serengeti, known for its endless plains,
+        extraordinary predator sightings and the spectacular Great
+        Migration. Every game drive brings new possibilities.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section" id="itinerary">
+  <div class="section-heading">
+    <span>Your Safari Experience</span>
+    <h2>7-Day Safari Itinerary</h2>
+    <p>An outline of your journey through Tanzania's most iconic wildlife destinations.</p>
+  </div>
+
+  <div class="itinerary">
+
+    <div class="day">
+      <div class="day-number">DAY 01</div>
+      <div>
+        <h3>Arrival and Tarangire National Park</h3>
+        <p>
+          Begin your Tanzania adventure with a journey to Tarangire
+          National Park. Enjoy a game drive through landscapes
+          dotted with ancient baobab trees and look out for elephants,
+          giraffes, zebras, wildebeest and a variety of bird species.
+        </p>
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">DAY 02</div>
+      <div>
+        <h3>Explore the Beauty of Tarangire</h3>
+        <p>
+          Enjoy another opportunity to explore Tarangire's remarkable
+          wildlife habitats. Discover the park's diverse landscapes
+          and observe animals gathering around its seasonal water
+          sources. Enjoy a memorable day in the African wilderness.
+        </p>
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">DAY 03</div>
+      <div>
+        <h3>Journey to the Ngorongoro Highlands</h3>
+        <p>
+          Travel towards the Ngorongoro Conservation Area, enjoying
+          the changing scenery along the way. Discover the beautiful
+          highland landscapes and prepare for your exploration of
+          the world-famous crater.
+        </p>
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">DAY 04</div>
+      <div>
+        <h3>Ngorongoro Crater Safari</h3>
+        <p>
+          Descend into the spectacular Ngorongoro Crater for an
+          unforgettable wildlife experience. Search for lions,
+          elephants, buffaloes, zebras, hippos and, with luck,
+          the endangered black rhino.
+        </p>
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">DAY 05</div>
+      <div>
+        <h3>Journey to Serengeti National Park</h3>
+        <p>
+          Continue your adventure towards the legendary Serengeti.
+          Enjoy wildlife viewing along the journey as the landscapes
+          open into vast plains. Arrive in the Serengeti and experience
+          the remarkable atmosphere of the African savannah.
+        </p>
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">DAY 06</div>
+      <div>
+        <h3>Full-Day Serengeti Wildlife Exploration</h3>
+        <p>
+          Spend the day exploring the Serengeti with your safari guide.
+          Look out for lions, leopards, cheetahs, elephants, giraffes
+          and other wildlife. Depending on the season, you may also
+          have opportunities to witness parts of the Great Migration.
+        </p>
+      </div>
+    </div>
+
+    <div class="day">
+      <div class="day-number">DAY 07</div>
+      <div>
+        <h3>Morning Game Drive and Departure</h3>
+        <p>
+          Enjoy your final safari moments with a morning game drive,
+          subject to your departure arrangements. After your wildlife
+          experience, begin your onward journey according to your
+          confirmed travel plan.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="section highlights">
+  <div class="section-heading">
+    <span>More Than a Safari</span>
+    <h2>What Makes This Journey Special?</h2>
+  </div>
+
+  <div class="highlight-grid">
+
+    <div class="highlight">
+      <h3>Exceptional Wildlife</h3>
+      <p>
+        Discover some of Africa's most celebrated wildlife,
+        including elephants, lions, leopards, cheetahs,
+        buffaloes and rhinos.
+      </p>
+    </div>
+
+    <div class="highlight">
+      <h3>Beautiful Landscapes</h3>
+      <p>
+        Experience the contrast between Tarangire's baobab
+        landscapes, Ngorongoro's highlands and the Serengeti's
+        endless plains.
+      </p>
+    </div>
+
+    <div class="highlight">
+      <h3>Great Migration</h3>
+      <p>
+        Depending on the season and location, discover the
+        remarkable movement of wildebeest and zebras across
+        the Serengeti ecosystem.
+      </p>
+    </div>
+
+    <div class="highlight">
+      <h3>Local Safari Experience</h3>
+      <p>
+        Explore Tanzania with Safari with Geofrey and enjoy
+        a personalised journey guided by local knowledge
+        and a passion for wildlife.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-heading">
+    <span>Plan With Confidence</span>
+    <h2>About Your Safari Package</h2>
+    <p>Your safari can be customised to match your travel preferences.</p>
+  </div>
+
+  <div class="package-info">
+
+    <div class="info-card">
+      <h3>Package Details</h3>
+      <ul>
+        <li>7-day Tanzania wildlife safari</li>
+        <li>6-night travel programme</li>
+        <li>Tarangire National Park</li>
+        <li>Ngorongoro Crater</li>
+        <li>Serengeti National Park</li>
+        <li>Private safari arrangements available</li>
+      </ul>
+    </div>
+
+    <div class="info-card">
+      <h3>Customise Your Journey</h3>
+      <ul>
+        <li>Flexible travel dates</li>
+        <li>Choice of accommodation category</li>
+        <li>Private safari options</li>
+        <li>Special honeymoon arrangements</li>
+        <li>Additional destinations on request</li>
+        <li>Personalised travel quotation</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="price-section">
+  <div class="price-label">Your Tanzania Adventure</div>
+  <h2>Custom Safari Quotation</h2>
+  <p>
+    Every traveller has different expectations. Contact Geofrey
+    for a personalised quotation based on your travel dates,
+    group size, accommodation preferences and requested services.
+  </p>
+</section>
+
+<section class="booking">
+  <h2>Let's Create Your Tanzania Safari</h2>
+  <p>
+    Ready to discover Tarangire, Ngorongoro and the Serengeti?
+    Get in touch with Geofrey and start planning your adventure
+    in the wild heart of Tanzania.
+  </p>
+
+  <a class="booking-button"
+     href="https://wa.me/255680157188?text=Hello%20Geofrey%2C%20I%20am%20interested%20in%20the%207-day%20Tanzania%20Wildlife%20Safari.">
+     Plan My Safari on WhatsApp
+  </a>
+</section>
+
+<footer>
+  <p><strong>SAFARI WITH GEOFREY</strong></p>
+  <p>Discover the Wild Heart of Tanzania</p>
+  <p>WhatsApp: +255 680 157 188</p>
+  <p>Email: uriogeofrey330@gmail.com</p>
+  <p>
+    <a href="https://www.safariwithgeofrey.com">www.safariwithgeofrey.com</a>
+  </p>
+  <p>© 2026 Safari with Geofrey. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
