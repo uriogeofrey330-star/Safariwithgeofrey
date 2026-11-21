@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="description" content="Experience a romantic 3-day Serengeti honeymoon safari from Zanzibar or Arusha with Safari with Geofrey. Enjoy breathtaking wildlife, luxury accommodation and an unforgettable hot-air balloon adventure.">
+
+<meta name="theme-color" content="#173d32">
+
+<title>3 Days Serengeti Honeymoon Safari | Safari with Geofrey</title>
+
+<link rel="canonical" href="https://www.safariwithgeofrey.com/3-days-honeymoon.html">
+
+<style>
+:root {
+  --green: #173d32;
+  --green2: #245647;
+  --clay: #b85d3d;
+  --cream: #f7f5ef;
+  --ink: #24342c;
+  --muted: #69746d;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.75;
+}
+
+a { text-decoration: none; }
+
+.wrap {
+  width: min(1120px, 92%);
+  margin: auto;
+}
+
+/* HEADER */
+
+header {
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 15px rgba(0,0,0,.07);
+}
+
+.nav {
+  min-height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brand {
+  color: var(--green);
+  font-weight: 900;
+  font-size: 19px;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--green);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background:
+    linear-gradient(rgba(12,31,24,.45),rgba(12,31,24,.72)),
+    url('Serengeti-Honeymoon.jpg') center/cover no-repeat;
+}
+
+.hero-content {
+  max-width: 850px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+.eyebrow {
+  color: #f1c49e;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 6vw, 66px);
+  line-height: 1.12;
+  margin: 20px 0;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 720px;
+  margin: auto;
+  color: #f5f5ef;
+}
+
+.btn {
+  display: inline-block;
+  padding: 14px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 12px 6px 0;
+  transition: .3s;
+}
+
+.btn-primary {
+  background: var(--clay);
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+}
+
+/* QUICK DETAILS */
+
+.quick-info {
+  background: white;
+  padding: 25px 0;
+  box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.info-grid strong {
+  display: block;
+  color: var(--green);
+  font-size: 17px;
+}
+
+.info-grid span {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* GENERAL SECTIONS */
+
+section { padding: 75px 0; }
+
+.section-heading {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 40px;
+}
+
+.kicker {
+  color: var(--clay);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-heading h2 {
+  color: var(--green);
+  font-size: clamp(28px,4vw,42px);
+  line-height: 1.2;
+  margin: 12px 0;
+}
+
+.section-heading p {
+  color: var(--muted);
+}
+
+/* INTRODUCTION */
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.intro-grid h2 {
+  color: var(--green);
+  font-size: 34px;
+  line-height: 1.2;
+  margin: 12px 0 20px;
+}
+
+.intro-image {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.highlight {
+  background: #e9eee7;
+  padding: 22px;
+  border-left: 4px solid var(--clay);
+  margin-top: 22px;
+  border-radius: 5px;
+}
+
+/* DEPARTURE OPTIONS */
+
+.departures {
+  background: #e9eee7;
+}
+
+.departure-grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 25px;
+}
+
+.departure-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.departure-card h3 {
+  color: var(--green);
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+/* ITINERARY */
+
+.day-card {
+  background: white;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 30px;
+  padding: 24px;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,.05);
+  align-items: center;
+}
+
+.day-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.day-number {
+  color: var(--clay);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+}
+
+.day-card h3 {
+  color: var(--green);
+  font-size: 24px;
+  margin: 8px 0 12px;
+}
+
+/* EXPERIENCE */
+
+.experience {
+  background: var(--green);
+  color: white;
+}
+
+.experience h2 { color: white; }
+
+.experience .section-heading p {
+  color: #d8e3db;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.experience-item {
+  background: rgba(255,255,255,.09);
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.experience-item h3 {
+  color: #f2c49e;
+  margin-bottom: 10px;
+}
+
+/* INCLUSIONS */
+
+.include-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.include-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.include-card h3 {
+  color: var(--green);
+  margin-bottom: 18px;
+}
+
+.include-card li {
+  margin: 10px 0 10px 20px;
+}
+
+/* PRICE */
+
+.price-section {
+  background: #e9eee7;
+  text-align: center;
+}
+
+.price-box {
+  max-width: 650px;
+  background: white;
+  margin: auto;
+  padding: 40px 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.06);
+}
+
+.price-box h2 {
+  color: var(--green);
+  font-size: 32px;
+}
+
+.price {
+  color: var(--clay);
+  font-size: 44px;
+  font-weight: 900;
+  margin: 15px 0;
+}
+
+/* CTA */
+
+.cta {
+  background:
+    linear-gradient(rgba(14,39,29,.82),rgba(14,39,29,.82)),
+    url('Serengeti-Hot-Air-Balloon.jpg') center/cover;
+  color: white;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: clamp(30px,5vw,45px);
+  margin-bottom: 15px;
+}
+
+.cta p {
+  max-width: 700px;
+  margin: auto;
+}
+
+footer {
+  background: #102b23;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 5px;
+}
+
+footer a { color: #f1c49e; }
+
+@media(max-width:750px) {
+  .nav {
+    padding: 15px 0;
+    flex-direction: column;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .intro-grid,
+  .departure-grid,
+  .day-card,
+  .experience-grid,
+  .include-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .day-card img { height: 230px; }
+
+  section { padding: 55px 0; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="wrap nav">
+<a href="index.html" class="brand">SAFARI WITH GEOFREY</a>
+
+<nav>
+<a href="index.html">Home</a>
+<a href="packages.html">Packages</a>
+<a href="about.html">About</a>
+<a href="gallery.html">Gallery</a>
+<a href="contact.html">Contact</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+<div class="hero-content">
+<div class="eyebrow">Romance • Wildlife • Adventure</div>
+
+<h1>3 Days Serengeti Honeymoon Safari</h1>
+
+<p>
+Celebrate your love in the heart of the African wilderness.
+Discover breathtaking landscapes, extraordinary wildlife,
+intimate safari moments and the unforgettable magic of a
+hot-air balloon experience in Tanzania's iconic Serengeti.
+</p>
+
+<a href="#itinerary" class="btn btn-primary">
+Explore Your Journey
+</a>
+
+<a href="#booking" class="btn btn-outline">
+Plan Your Honeymoon
+</a>
+</div>
+</section>
+
+<!-- QUICK INFO -->
+
+<div class="quick-info">
+<div class="wrap info-grid">
+
+<div>
+<strong>3 Days</strong>
+<span>Safari Adventure</span>
+</div>
+
+<div>
+<strong>2 Nights</strong>
+<span>Accommodation</span>
+</div>
+
+<div>
+<strong>Serengeti</strong>
+<span>Wildlife Destination</span>
+</div>
+
+<div>
+<strong>Balloon Safari</strong>
+<span>Special Experience</span>
+</div>
+
+</div>
+</div>
+
+<!-- INTRODUCTION -->
+
+<section>
+<div class="wrap intro-grid">
+
+<div>
+<div class="kicker">A honeymoon beyond ordinary</div>
+
+<h2>Your Love Story, Written in the Wild</h2>
+
+<p>
+Imagine waking up to the sounds of the African wilderness,
+watching the golden sunrise stretch across endless savannah
+plains and sharing unforgettable moments surrounded by
+some of the world's most remarkable wildlife.
+</p>
+
+<p>
+This carefully designed three-day Serengeti honeymoon
+experience combines romance, adventure and extraordinary
+natural beauty. From exciting game drives to the peaceful
+magic of a hot-air balloon flight, every moment offers
+an opportunity to create memories together.
+</p>
+
+<p>
+Whether you are celebrating your honeymoon, an anniversary
+or simply the joy of travelling together, Serengeti offers
+an exceptional setting for a truly special escape.
+</p>
+
+<div class="highlight">
+<strong>Travel with local knowledge.</strong>
+With Safari with Geofrey, your journey is planned with
+personal attention, local destination knowledge and
+a passion for sharing Tanzania's remarkable wilderness.
+</div>
+</div>
+
+<img class="intro-image"
+src="Serengeti-Honeymoon.jpg"
+alt="Romantic Serengeti honeymoon safari">
+
+</div>
+</section>
+
+<!-- DEPARTURE OPTIONS -->
+
+<section class="departures">
+<div class="wrap">
+
+<div class="section-heading">
+<div class="kicker">Flexible safari departures</div>
+<h2>Choose Where Your Safari Begins</h2>
+<p>
+Your Serengeti honeymoon can be arranged from Zanzibar
+or Arusha, depending on your travel plans and preferred
+way of reaching the national park.
+</p>
+</div>
+
+<div class="departure-grid">
+
+<div class="departure-card">
+<h3>Starting from Zanzibar</h3>
+
+<p>
+Enjoy a convenient flight connection from the beautiful
+island of Zanzibar to the Serengeti. Begin your honeymoon
+adventure surrounded by spectacular landscapes and
+extraordinary African wildlife.
+</p>
+
+<p>
+The Zanzibar departure option includes return flights
+between Zanzibar and Serengeti as specified in the
+USD 1,850 package.
+</p>
+</div>
+
+<div class="departure-card">
+<h3>Starting from Arusha</h3>
+
+<p>
+Begin your journey from Arusha, Tanzania's safari gateway.
+Travel towards the Serengeti by a suitable safari vehicle
+or arrange a flight connection, depending on your
+preferences and schedule.
+</p>
+
+<p>
+The Arusha departure option is available on request.
+A personalised quotation will be provided based on
+your preferred transport arrangements.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ITINERARY -->
+
+<section id="itinerary">
+<div class="wrap">
+
+<div class="section-heading">
+<div class="kicker">Your three-day adventure</div>
+<h2>Safari Itinerary</h2>
+<p>
+Three unforgettable days of wildlife encounters,
+beautiful landscapes and special moments in the
+heart of the Serengeti.
+</p>
+</div>
+
+<div class="day-card">
+
+<img src="Serengeti-plains.jpg"
+alt="Serengeti National Park landscape">
+
+<div>
+<div class="day-number">Day 01</div>
+
+<h3>Arrival in Serengeti & Afternoon Game Drive</h3>
+
+<p>
+Arrive in the Serengeti from Zanzibar or Arusha,
+where your unforgettable honeymoon adventure begins.
+Meet your safari team and start discovering the
+remarkable beauty of Tanzania's most famous
+wildlife destination.
+</p>
+
+<p>
+Enjoy an exciting game drive across the open plains,
+searching for lions, elephants, giraffes, zebras,
+wildebeest and other fascinating wildlife.
+</p>
+
+<p>
+As the African sun begins to set, enjoy the beautiful
+Serengeti scenery before heading to your accommodation
+for dinner and a relaxing evening.
+</p>
+
+<strong>Overnight:</strong> Selected Serengeti accommodation.
+</div>
+</div>
+
+<div class="day-card">
+
+<img src="Serengeti-Hot-Air-Balloon.jpg"
+alt="Hot air balloon over Serengeti">
+
+<div>
+<div class="day-number">Day 02</div>
+
+<h3>Hot-Air Balloon Safari & Full-Day Wildlife Adventure</h3>
+
+<p>
+Wake up early for one of the most extraordinary
+experiences of your honeymoon: a hot-air balloon
+safari over the magnificent Serengeti.
+</p>
+
+<p>
+Watch the wilderness come alive as the first light
+of dawn illuminates the endless plains below.
+From above, appreciate the spectacular landscapes
+and wildlife of the Serengeti from a completely
+different perspective.
+</p>
+
+<p>
+After your balloon experience, enjoy the special
+celebration and breakfast arranged as part of the
+balloon safari experience.
+</p>
+
+<p>
+Continue exploring the Serengeti with an exciting
+game drive, discovering more wildlife and enjoying
+quality time together in the African wilderness.
+</p>
+
+<strong>Overnight:</strong> Selected Serengeti accommodation.
+</div>
+</div>
+
+<div class="day-card">
+
+<img src="Serengeti-plains.jpg"
+alt="Sunrise over Serengeti plains">
+
+<div>
+<div class="day-number">Day 03</div>
+
+<h3>Morning Safari & Departure</h3>
+
+<p>
+Enjoy your final morning in the Serengeti with
+an opportunity for another wildlife viewing
+experience, depending on your departure schedule.
+</p>
+
+<p>
+Take in the beautiful scenery, capture your last
+photographs and appreciate the unforgettable
+moments you have shared during your honeymoon.
+</p>
+
+<p>
+After the safari experience, transfer for your
+return journey to Zanzibar or Arusha according
+to your confirmed travel arrangements.
+</p>
+
+<strong>End of your Serengeti honeymoon safari.</strong>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- EXPERIENCES -->
+
+<section class="experience">
+<div class="wrap">
+
+<div class="section-heading">
+<div class="kicker">More than just a safari</div>
+<h2>Special Moments to Remember</h2>
+<p>
+A beautiful combination of adventure, natural beauty
+and meaningful experiences in Tanzania.
+</p>
+</div>
+
+<div class="experience-grid">
+
+<div class="experience-item">
+<h3>Hot-Air Balloon Adventure</h3>
+<p>
+Experience the Serengeti from above as the sun rises
+over its spectacular wildlife landscapes.
+</p>
+</div>
+
+<div class="experience-item">
+<h3>Exceptional Wildlife</h3>
+<p>
+Discover the Big Five and many other remarkable
+animals in their natural environment.
+</p>
+</div>
+
+<div class="experience-item">
+<h3>Romantic Safari Escape</h3>
+<p>
+Share special moments together in one of Africa's
+most beautiful and unforgettable wilderness areas.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- INCLUSIONS -->
+
+<section>
+<div class="wrap">
+
+<div class="section-heading">
+<div class="kicker">Know before you travel</div>
+<h2>Package Information</h2>
+<p>
+Your final safari quotation will clearly outline
+all confirmed services and arrangements.
+</p>
+</div>
+
+<div class="include-grid">
+
+<div class="include-card">
+<h3>Package Highlights</h3>
+<ul>
+<li>Three-day Serengeti honeymoon safari.</li>
+<li>Two nights of selected safari accommodation.</li>
+<li>Hot-air balloon safari experience.</li>
+<li>Wildlife game drives in the Serengeti.</li>
+<li>Departure options from Zanzibar or Arusha.</li>
+<li>Personal safari planning with Geofrey.</li>
+</ul>
+</div>
+
+<div class="include-card">
+<h3>Important Travel Information</h3>
+<ul>
+<li>Return Zanzibar flights apply to the Zanzibar package option.</li>
+<li>Arusha departure arrangements are quoted separately.</li>
+<li>Accommodation and transport details are confirmed before booking.</li>
+<li>Safari schedules may be adjusted to flight timings and park conditions.</li>
+<li>All final inclusions and exclusions are stated in your quotation.</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- PRICE -->
+
+<section class="price-section">
+<div class="wrap">
+
+<div class="price-box">
+<div class="kicker">Your Serengeti honeymoon awaits</div>
+
+<h2>3 Days Serengeti Honeymoon Safari</h2>
+
+<div class="price">USD 1,850</div>
+
+<p>Per person · Zanzibar departure package</p>
+
+<p>
+For departures from Arusha, contact Geofrey
+for a personalised quotation.
+</p>
+
+<a class="btn btn-primary"
+href="https://wa.me/255680157188?text=Jambo%20Geofrey%2C%20I%20am%20interested%20in%20the%203-day%20Serengeti%20honeymoon%20safari.%20Please%20share%20the%20details.">
+Request Your Safari Quote
+</a>
+</div>
+
+</div>
+</section>
+
+<!-- BOOKING -->
+
+<section class="cta" id="booking">
+<div class="wrap">
+
+<div class="kicker">Let's create something unforgettable</div>
+
+<h2>Begin Your Serengeti Love Story</h2>
+
+<p>
+Every great journey begins with a conversation.
+Share your preferred travel dates, departure location
+and honeymoon plans with Geofrey. Let's create a
+beautiful Tanzania safari experience together.
+</p>
+
+<a class="btn btn-primary"
+href="https://wa.me/255680157188?text=Jambo%20Geofrey%2C%20I%20would%20love%20to%20plan%20a%203-day%20Serengeti%20honeymoon%20safari.%20My%20departure%20will%20be%20from%3A">
+Plan My Honeymoon Safari
+</a>
+
+<a href="packages.html" class="btn btn-outline">
+Explore Other Packages
+</a>
+
+</div>
+</section>
+
+<footer>
+<p><strong>SAFARI WITH GEOFREY</strong></p>
+<p>Discover the Wild Heart of Tanzania</p>
+<p>WhatsApp: +255 680 157 188</p>
+<p>Email: uriogeofrey330@gmail.com</p>
+<p>
+<a href="packages.html">Safari Packages</a> |
+<a href="index.html">Home</a> |
+<a href="contact.html">Contact</a>
+</p>
+<p>© 2026 Safari with Geofrey. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
