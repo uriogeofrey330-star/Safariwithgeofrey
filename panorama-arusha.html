@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Discover Panorama Arusha Experience with Safari with Geofrey. Enjoy scenic views, photography, sunset moments and overnight escapes in Arusha, Tanzania.">
+
+  <meta name="keywords" content="Panorama Arusha, Arusha experiences, Tanzania tours, scenic views Arusha, Safari with Geofrey">
+
+  <title>Panorama Arusha Experience | Safari with Geofrey</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #26352f;
+      line-height: 1.7;
+      background: #f8f8f4;
+    }
+
+    header {
+      background: #17392e;
+      padding: 20px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      color: white;
+      font-size: 23px;
+      font-weight: bold;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    header a.back-link {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 530px;
+      background:
+        linear-gradient(rgba(15, 35, 28, .48), rgba(15, 35, 28, .68)),
+        url('Panorama-Arusha.jpg');
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 70px 20px;
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .hero-content .eyebrow {
+      letter-spacing: 3px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 6vw, 65px);
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 27px;
+      background: #bd7948;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .btn:hover {
+      background: #995b32;
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 75px 22px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+
+    .section-heading span {
+      color: #b56b36;
+      font-weight: bold;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    .section-heading h2 {
+      color: #17392e;
+      font-size: 34px;
+      margin-top: 8px;
+    }
+
+    .intro {
+      max-width: 850px;
+      margin: auto;
+      text-align: center;
+      font-size: 17px;
+    }
+
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .highlight {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 5px 20px rgba(0,0,0,.06);
+    }
+
+    .highlight .symbol {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .highlight h3 {
+      color: #17392e;
+      margin-bottom: 8px;
+    }
+
+    .experience {
+      background: #edf1eb;
+    }
+
+    .experience-card {
+      background: white;
+      border-radius: 12px;
+      padding: 32px;
+      margin: 30px auto;
+      max-width: 850px;
+      box-shadow: 0 6px 22px rgba(0,0,0,.07);
+    }
+
+    .experience-card h3 {
+      color: #17392e;
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .experience-card .description {
+      margin-bottom: 22px;
+    }
+
+    .day-title {
+      color: #a65e32;
+      font-weight: bold;
+      margin: 20px 0 10px;
+    }
+
+    .itinerary {
+      list-style: none;
+    }
+
+    .itinerary li {
+      padding: 10px 0;
+      border-bottom: 1px solid #e8e8e2;
+    }
+
+    .itinerary strong {
+      color: #17392e;
+      display: inline-block;
+      min-width: 105px;
+    }
+
+    .note {
+      background: #f6f2eb;
+      padding: 18px;
+      border-left: 4px solid #bd7948;
+      margin-top: 20px;
+      border-radius: 4px;
+    }
+
+    .cta {
+      background: #17392e;
+      color: white;
+      text-align: center;
+      padding: 75px 22px;
+    }
+
+    .cta h2 {
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .cta p {
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    footer {
+      background: #10291f;
+      color: #ddd;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 18px 5%;
+      }
+
+      .hero {
+        min-height: 450px;
+      }
+
+      .section {
+        padding: 55px 18px;
+      }
+
+      .experience-card {
+        padding: 23px 18px;
+      }
+
+      .itinerary strong {
+        min-width: 85px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a href="index.html" class="logo">SAFARI WITH GEOFREY</a>
+    <a href="packages.html" class="back-link">← Back to Safari Packages</a>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">SCENIC ESCAPE • ARUSHA • TANZANIA</p>
+      <h1>Discover the Beauty of Panorama Arusha</h1>
+      <p>
+        Escape the ordinary and enjoy breathtaking scenery,
+        peaceful surroundings, beautiful photography and
+        unforgettable sunset moments.
+      </p>
+      <a href="#experiences" class="btn">Explore Experiences</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-heading">
+      <span>WELCOME TO PANORAMA</span>
+      <h2>A Different Way to Experience Arusha</h2>
+    </div>
+
+    <div class="intro">
+      <p>
+        Looking for something special beyond the traditional safari?
+        Panorama Arusha Experience invites you to slow down and
+        appreciate the beautiful landscapes surrounding Arusha.
+        Enjoy scenic views, peaceful moments, photography opportunities
+        and the magic of the changing sky as the sun sets.
+      </p>
+      <br>
+      <p>
+        Whether you have a few hours to spare or wish to enjoy
+        an overnight escape, Safari with Geofrey can help you
+        plan an experience suited to your travel schedule.
+      </p>
+    </div>
+
+    <div class="highlight-grid">
+      <div class="highlight">
+        <div class="symbol">🌄</div>
+        <h3>Scenic Views</h3>
+        <p>Enjoy beautiful landscapes and views around Arusha.</p>
+      </div>
+
+      <div class="highlight">
+        <div class="symbol">📸</div>
+        <h3>Photography</h3>
+        <p>Capture memorable moments and beautiful scenery.</p>
+      </div>
+
+      <div class="highlight">
+        <div class="symbol">🌅</div>
+        <h3>Sunset Moments</h3>
+        <p>Relax and appreciate the beauty of the evening sky.</p>
+      </div>
+
+      <div class="highlight">
+        <div class="symbol">🏕️</div>
+        <h3>Overnight Escape</h3>
+        <p>Enjoy a slower-paced outdoor experience with an overnight stay arrangement.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experiences">
+    <div class="section">
+      <div class="section-heading">
+        <span>CHOOSE YOUR EXPERIENCE</span>
+        <h2>Two Ways to Discover Panorama</h2>
+      </div>
+
+      <div class="experience-card">
+        <h3>1. Half-Day Panorama Experience</h3>
+        <p class="description">
+          Perfect for travellers with limited time in Arusha.
+          Enjoy an afternoon escape, scenic photography and
+          beautiful sunset views before returning to your hotel.
+        </p>
+
+        <ul class="itinerary">
+          <li><strong>2:00 PM</strong> Pickup from your hotel in Arusha.</li>
+          <li><strong>3:00 PM</strong> Arrival at The Panorama.</li>
+          <li><strong>3:15 PM</strong> Explore the scenic surroundings and viewpoints.</li>
+          <li><strong>4:00 PM</strong> Photography and relaxation time.</li>
+          <li><strong>5:00 PM</strong> Enjoy the sunset atmosphere.</li>
+          <li><strong>6:30 PM</strong> Begin the return journey.</li>
+          <li><strong>7:00 PM</strong> Drop-off at your hotel.</li>
+        </ul>
+
+        <div class="note">
+          <strong>Ideal for:</strong> Couples, friends, solo travellers
+          and anyone looking for a memorable afternoon in Arusha.
+        </div>
+      </div>
+
+      <div class="experience-card">
+        <h3>2. Overnight Panorama Experience</h3>
+        <p class="description">
+          Make more time for the scenery with an overnight escape.
+          Enjoy the afternoon atmosphere, sunset, a peaceful evening
+          and the beauty of the landscape the following morning.
+        </p>
+
+        <p class="day-title">DAY 1 – ARRIVAL AND SUNSET</p>
+
+        <ul class="itinerary">
+          <li><strong>2:00 PM</strong> Pickup from your hotel in Arusha.</li>
+          <li><strong>3:00 PM</strong> Arrival and camping or accommodation arrangements.</li>
+          <li><strong>3:30 PM</strong> Explore the scenic viewpoints.</li>
+          <li><strong>4:30 PM</strong> Photography and relaxation.</li>
+          <li><strong>5:30 PM</strong> Enjoy the beautiful sunset.</li>
+          <li><strong>7:00 PM</strong> Dinner arrangements and evening relaxation.</li>
+          <li><strong>8:00 PM</strong> Enjoy a peaceful night outdoors.</li>
+        </ul>
+
+        <p class="day-title">DAY 2 – MORNING EXPERIENCE</p>
+
+        <ul class="itinerary">
+          <li><strong>6:30 AM</strong> Enjoy the fresh morning atmosphere.</li>
+          <li><strong>7:00 AM</strong> Sunrise views and photography.</li>
+          <li><strong>8:00 AM</strong> Breakfast arrangements.</li>
+          <li><strong>9:00 AM</strong> Enjoy your final moments at the location.</li>
+          <li><strong>10:00 AM</strong> Begin the return journey to Arusha.</li>
+        </ul>
+
+        <div class="note">
+          <strong>Ideal for:</strong> Couples, photography lovers,
+          friends and travellers who prefer a relaxed outdoor escape.
+          Overnight arrangements, meals and accommodation should
+          be confirmed when planning your visit.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Experience Panorama Arusha?</h2>
+    <p>
+      Let Safari with Geofrey help you plan your visit.
+      Get in touch to discuss your preferred experience,
+      travel date and arrangements.
+    </p>
+
+    <a
+      class="btn"
+      href="https://wa.me/255680157188?text=Hello%20Geofrey%2C%20I%20am%20interested%20in%20the%20Panorama%20Arusha%20Experience."
+      target="_blank"
+      rel="noopener">
+      Plan Your Experience on WhatsApp
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Safari with Geofrey. All Rights Reserved.</p>
+    <p>Discover Tanzania. Experience More.</p>
+    <p>
+      <a href="https://www.safariwithgeofrey.com">
+        www.safariwithgeofrey.com
+      </a>
+    </p>
+  </footer>
+
+</body>
+</html>
